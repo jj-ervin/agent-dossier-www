@@ -1,0 +1,84 @@
+---
+title: Agent Dossier Specification
+description: Deterministic, auditable governance for multi-agent development
+template: splash
+hero:
+  tagline: Deterministic, auditable governance for multi-agent systems.
+  actions:
+    - text: Quick Start
+      link: /getting-started/quick-start/
+      icon: right-arrow
+    - text: View Schemas
+      link: /reference/schema/
+      icon: document
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Portable Agent Governance
+
+Agent Dossier is a formal standard for declaring agent identity, agreements, authorities, constraints, handoff behavior, and governance rules before work begins.
+
+It gives orchestrators and teams a shared, machine-readable contract for what an agent can do, what it must not do, and how its work should be audited.
+
+<CardGrid>
+	<Card title="Deterministic" icon="setting">
+		Stable declarations make agent capabilities and constraints reproducible across tools and teams.
+	</Card>
+	<Card title="Portable" icon="seti:yaml">
+		Dossiers travel across orchestrators without embedding behavior in one runtime.
+	</Card>
+	<Card title="Auditable" icon="document">
+		Governance, handoffs, and runtime expectations are explicit enough to inspect and validate.
+	</Card>
+	<Card title="Machine-readable" icon="code">
+		Versioned JSON Schemas support validation, automation, and conformance testing.
+	</Card>
+</CardGrid>
+
+## Current Version
+
+**Version:** 1.0.0  
+**Status:** Active  
+**License:** Apache 2.0
+
+## Schema URLs
+
+Schemas are served at permanent, versioned URLs:
+
+```text
+https://agent-dossier.org/v/1.0.0/schemas/agent-dossier.schema.json
+https://agent-dossier.org/v/1.0.0/schemas/agent-dossier-instance.schema.json
+https://agent-dossier.org/v/1.0.0/schemas/runtime-contract.schema.json
+https://agent-dossier.org/v/1.0.0/schemas/handoff-envelope.schema.json
+https://agent-dossier.org/v/1.0.0/schemas/pass-changelog-entry.schema.json
+```
+
+Each version has its own permanent path. Schemas are never overwritten.
+
+## The Agent Dossier in 30 Seconds
+
+```yaml
+identity:
+  agent_id: my-research-agent
+  display_name: Research Agent
+  agent_class: research
+  dossier_version: 1.0.0
+  specification_version: 1.0.0
+
+authorities:
+  - can_fetch_external_data
+  - can_search_knowledge_base
+  - can_propose_hypotheses
+
+constraints:
+  - must_cite_sources
+  - must_flag_uncertainty
+  - cannot_modify_data
+  - cannot_initiate_external_calls
+
+governance:
+  compliance_profile: opentelemetry
+  audit_level: full
+```

@@ -1,0 +1,18 @@
+{
+  "name": "agent-dossier-www",
+  "description": "Agent Dossier Specification website - deterministic governance standard for multi-agent systems",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.39.3",
+    "astro": "^6.3.1",
+    "sharp": "^0.34.5"
+  }
+}

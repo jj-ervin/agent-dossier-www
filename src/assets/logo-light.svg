@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-labelledby="title">
+  <title id="title">Agent Dossier Specification</title>
+  <rect width="192" height="192" rx="28" fill="#f8fafc"/>
+  <path d="M96 22 58 96l38 74 38-74-38-74Zm0 38 19 36-19 36-19-36 19-36Z" fill="#0f172a"/>
+  <path d="M34 96h40m44 0h40M96 34v40m0 44v40" stroke="#2563eb" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="96" cy="96" r="16" fill="#0f172a"/>
+</svg>
