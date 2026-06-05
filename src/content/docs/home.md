@@ -9,6 +9,8 @@ description: Deterministic, auditable governance for multi-agent development
 
 The standard makes agent behavior explicit before work begins, provides a common handshake across orchestrators, and preserves auditable traces of changes and decisions.
 
+Agent Dossier is part of **Governance Commons**, a family of interoperable standards at `governancecommons.org` that also includes Agent Matrix, Ontic Namespace Structure (ONS), and Project Orchestrator Agent.
+
 ### Why Agent Dossier?
 
 - **Explicit Governance**: Make agent capabilities, authorities, and constraints clear and machine-readable
